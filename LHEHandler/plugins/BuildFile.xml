@@ -6,7 +6,6 @@
 <use name="root"/>
 
 <library   file="*.cc" name="CommonLHEToolsLHEHandlerPlugins">
-<flags CPPFLAGS="-I$(CMSSW_BASE)/src/CommonLHETools/LHEHandler/interface/ -I$(MELA_LIB_PATH)/../../interface/" />
-<flags LDFLAGS="-L$(MELA_LIB_PATH) -L$(MELAANALYTICS_PATH)/EventContainer/lib -lmcfm_707 -ljhugenmela -lcollier -lJHUGenMELAMELA -lMelaAnalyticsEventContainer" />
+<flags CPPFLAGS="-I$(CMSSW_BASE)/src/CommonLHETools/LHEHandler/interface/ -I$(CMSSW_BASE)/src/JHUGenMELA/MELA/interface/" />
 <flags EDM_PLUGIN="1"/>
 </library>

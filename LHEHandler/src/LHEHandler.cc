@@ -834,7 +834,7 @@ void LHEHandler::readEvent(){
       else if (weightstype == madgraph_1000offset && wgtid == 2080){ // This is NNPDF 3.0 LO with a_s=0.130, no variations
         if (pdfChoice==tryNNPDF30 && orderChoice==tryLO){ defaultWeightScale = wgtval; found_defaultWeightScale = true; }
       }
-      else if (weightstype == madgraph_1000offset && 2076 <= wgtid && wgtid <= 2080){ /*do nothing, these are other various weights*/ }
+      else if (weightstype == madgraph_1000offset && 2076 <= wgtid && wgtid <= 2999){ /*do nothing, these are other various weights*/ }
 
       //powheg
       else if (weightstype == unknown && (wgtid == 2000 || wgtid == 2001)){ // This is the NNPDF 3.1 NNLO central value, but do nothing if wgtid == 2000
